@@ -1,0 +1,9 @@
+*.class
+*.jar
+*.log
+target
+archived
+*.war
+.settings
+.project
+.classpath
