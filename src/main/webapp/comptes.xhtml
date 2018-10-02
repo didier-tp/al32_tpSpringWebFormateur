@@ -12,7 +12,18 @@
 <h:body>
 	
 	    numClient: <h:outputText  value="#{clientComptesMBean.numClient}" /><br/>
-	   
+	    
+	    <h:dataTable border="1" var="c" value="#{clientComptesMBean.listeComptes}">
+	        <h:column>
+	             <h:outputText value="#{c.numero}"/>
+	        </h:column>
+	        <h:column>
+	             <h:outputText value="#{c.label}"/>
+	        </h:column>
+	        <h:column>
+	             <h:outputText value="#{c.solde}"/>
+	        </h:column>
+	    </h:dataTable>
 	
 </h:body>
 </html>
